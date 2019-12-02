@@ -65,6 +65,8 @@
       drawer: false,
       menuItems: [
         {icon: 'home', title: 'Home', link: '/'},
+        {icon: 'home', title: 'schoolofnet', link: '/schoolofnet'},
+        {icon: 'home', title: 'vuemastery', link: '/vuemastery'},
       ]
     }),
 

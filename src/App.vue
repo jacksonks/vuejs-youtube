@@ -67,6 +67,7 @@
         {icon: 'home', title: 'Home', link: '/'},
         {icon: 'home', title: 'schoolofnet', link: '/schoolofnet'},
         {icon: 'home', title: 'vuemastery', link: '/vuemastery'},
+        {icon: 'home', title: 'vueschoolio', link: '/vueschoolio'},
       ]
     }),
 

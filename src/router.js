@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import index from './views/index.vue'
 import schoolofnet from './views/schoolofnet.vue'
 import vuemastery from './views/vuemastery.vue'
+import vueschoolio from './views/vueschoolio.vue'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
             path: '/vuemastery',
             name: 'vuemastery',
             component: vuemastery
+        },
+        {
+            path: '/vueschoolio',
+            name: 'vueschoolio',
+            component: vueschoolio
         },
     ],
     mode: 'history'

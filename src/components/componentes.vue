@@ -1,7 +1,13 @@
 <template>
     <v-content>
         <v-container>
-            <v-layout>
+            <v-layout row wrap>
+
+                <v-btn @click="contador++">
+                    <v-icon>add</v-icon>
+                    {{contador}}
+                </v-btn>
+                
             </v-layout>
         </v-container>
     </v-content>
@@ -10,7 +16,7 @@
 <script>
     export default {
         data: () => ({
-            //
+            contador: 0,
         }),
         computed:{
             //
@@ -23,5 +29,6 @@
         }
     };
 </script>
+
 <style scoped>
 </style>

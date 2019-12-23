@@ -5,7 +5,7 @@
 
                 <v-btn @click="contador++">
                     <v-icon>add</v-icon>
-                    {{contador}}
+                    You clicked me {{ contador }} times.
                 </v-btn>
                 
             </v-layout>

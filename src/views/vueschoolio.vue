@@ -4,8 +4,7 @@
             <v-layout>
                 <fundamentals></fundamentals>
                 <componentes></componentes>
-                <componentes></componentes>
-                <componentes></componentes>
+
             </v-layout>
         </v-container>
     </v-content>

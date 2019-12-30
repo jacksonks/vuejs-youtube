@@ -4,6 +4,7 @@ import index from './views/index.vue'
 import schoolofnet from './views/schoolofnet.vue'
 import vuemastery from './views/vuemastery.vue'
 import vueschoolio from './views/vueschoolio.vue'
+import Origamid from './views/Origamid.vue'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
             path: '/vueschoolio',
             name: 'vueschoolio',
             component: vueschoolio
+        },
+        {
+            path: '/Origamid',
+            name: 'Origamid',
+            component: Origamid
         },
     ],
     mode: 'history'

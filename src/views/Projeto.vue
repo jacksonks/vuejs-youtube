@@ -1,8 +1,8 @@
 <template>
     <v-content>
         <v-container>
-            <v-layout>
-                <h1>HOME</h1>
+            <v-layout row wrap>
+                <h1>dfbcgfh</h1>
             </v-layout>
         </v-container>
     </v-content>

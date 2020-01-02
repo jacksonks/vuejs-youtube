@@ -5,6 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Origamid.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Origamid.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +84,9 @@
       <workItem from="1576755771238" duration="1229000" />
       <workItem from="1576757909211" duration="3682000" />
       <workItem from="1577723124501" duration="175000" />
+      <workItem from="1577843850828" duration="3232000" />
+      <workItem from="1577894069393" duration="4229000" />
+      <workItem from="1577930720532" duration="1532000" />
     </task>
     <servers />
   </component>
@@ -97,5 +102,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1576763048784" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1577846305576">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1577846305576" />
   </component>
 </project>

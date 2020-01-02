@@ -20,7 +20,7 @@
                         <strong>dados da api: {{api}}</strong>
                         <ul v-for="(dados,i) in api" :key="i">
                             <li>
-                                {{dados}}
+                                {{i}}: {{dados}}
                             </li>
                         </ul>
                     </v-flex>
@@ -38,13 +38,17 @@
                     </strong>
                 </v-flex>
                 <v-flex>
-                    <v-btn @click="c">pegar da api</v-btn>
-                    <strong>API: {{cep}}</strong>
-                    <ul v-for="(dados,i) in cep" :key="i">
-                        <li>
-                            {{dados}}
-                        </li>
+                    <v-text-field placeholder="CEP" outlined type="number" v-model="cep" label="CEP" clearable></v-text-field>
+                    {{endereco}}
+
+                    <ul>
+                        <li v-for="(item, i) in endereco" :key="i">{{i}}: {{item}}</li>
                     </ul>
+                </v-flex>
+                <v-flex>
+                    <p :class="cor">do data</p>
+                    <p class="verde">do style</p>
+                    <p class="red">direto na propriedade</p>
                 </v-flex>
             </v-layout>
         </v-container>
@@ -54,6 +58,7 @@
 <script>
     export default {
         data: () => ({
+            cor: "blue",
             carrinho: 0,
             estoque: 6,
             site: "<a href='https://www.google.com/'>Google</a>",
@@ -61,6 +66,7 @@
             h: "<h1>h1</h1>",
             api: undefined,
             cep: undefined,
+            endereco: undefined,
             states: [
                 { name: 'Florida', abbr: 'FL', id: 1 },
                 { name: 'Georgia', abbr: 'GA', id: 2 },
@@ -72,8 +78,16 @@
         computed:{
             //
         },
-        watch:{
-            //
+        watch: {
+            cep(valor) {
+                if (valor.length === 8) {
+                    fetch(`https://viacep.com.br/ws/${valor}/json/`)
+                        .then(r => r.json())
+                        .then(r => {
+                            this.endereco = r;
+                        });
+                }
+            }
         },
         methods: {
             incrementdar(){
@@ -83,13 +97,6 @@
             decrementar(){
                 this.carrinho--
                 this.estoque++
-            },
-            c(){
-                fetch("https://viacep.com.br/ws/04538133/json/")
-                    .then(response => response.json())
-                    .then(json => {
-                        this.cep = json;
-                    })
             },
             pegar (){
                 fetch("https://jsonplaceholder.typicode.com/users/6")
@@ -103,4 +110,8 @@
 </script>
 
 <style scoped>
+    .verde {
+        color: green;
+        background: black;
+    }
 </style>

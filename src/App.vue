@@ -69,6 +69,7 @@
         {icon: 'home', title: 'vuemastery', link: '/vuemastery'},
         {icon: 'home', title: 'vueschoolio', link: '/vueschoolio'},
         {icon: 'home', title: 'Origamid', link: '/Origamid'},
+        {icon: 'home', title: 'Projeto', link: '/Projeto'},
       ]
     }),
 

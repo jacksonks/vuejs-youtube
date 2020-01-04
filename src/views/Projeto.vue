@@ -1,17 +1,17 @@
 <template>
-    <v-content>
-        <v-container>
-            <v-layout row wrap>
-                <h1>dfbcgfh</h1>
-            </v-layout>
-        </v-container>
-    </v-content>
+    <v-container class="white">
+        <v-card>
+            <vue-editor v-model="text" />
+        </v-card>
+    </v-container>
 </template>
 
 <script>
+    import { VueEditor } from "vue2-editor";
     export default {
+        components: { VueEditor },
         data: () => ({
-            //
+            text: '',
         }),
         computed:{
             //

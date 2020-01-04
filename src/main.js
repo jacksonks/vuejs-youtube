@@ -4,7 +4,9 @@ import vuetify from './plugins/vuetify';
 import 'vuetify/dist/vuetify.min.css'
 import router from './router'
 import {store} from './store/store'
+import Vue2Editor from "vue2-editor"
 
+Vue.use(Vue2Editor);
 Vue.config.productionTip = false
 
 new Vue({

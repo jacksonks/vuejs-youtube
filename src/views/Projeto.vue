@@ -2,15 +2,21 @@
     <v-content>
         <v-container>
             <v-layout>
+
                 <v-flex>
                     <v-btn color="primary" dark @click="dialog = true">Dialog</v-btn>
 
                     <v-dialog v-model="dialog" width="350px" text>
-                        <Testes @close-dialog="closeDialog"></Testes>
+                        <Testes @close-dialog="dialog = false"></Testes>
                     </v-dialog>
                     <br>
                     <p>valor do v-model do dialog do component: <strong>{{dialog}}</strong></p>
                 </v-flex>
+
+                <v-flex>
+                    <lista :cores="listadecores" estatico="string estatica"></lista>
+                </v-flex>
+
             </v-layout>
         </v-container>
     </v-content>
@@ -18,10 +24,12 @@
 
 <script>
     import Testes from "../components/Testes";
+    import Lista from "../components/lista";
     export default {
-        components: {Testes},
+        components: {Lista, Testes},
         data: () => ({
             dialog: false,
+            listadecores: ['azul', 'verde', 'amarelo', 'vermelho']
         }),
         computed:{
             //

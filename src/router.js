@@ -6,6 +6,7 @@ import vuemastery from './views/vuemastery.vue'
 import vueschoolio from './views/vueschoolio.vue'
 import Origamid from './views/Origamid.vue'
 import Projeto from './views/Projeto.vue'
+import tabela from './views/tabela.vue'
 
 Vue.use(Router)
 
@@ -40,6 +41,11 @@ export default new Router({
             path: '/Projeto',
             name: 'Projeto',
             component: Projeto
+        },
+        {
+            path: '/tabela',
+            name: 'tabela',
+            component: tabela
         },
     ],
     mode: 'history'
